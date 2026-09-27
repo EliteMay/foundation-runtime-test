@@ -1,0 +1,22 @@
+# test2
+
+Godot Game Foundationを基盤として作成されたGodotゲームProjectです。
+
+## 基盤
+
+- Foundation: `0.10.0-dev`
+- Repository: `EliteMay/foundation-runtime-test`
+- Godot baseline: 4.7.2 stable
+
+Foundationの再利用Codeは `addons/game_foundation/` にあります。`FoundationRuntime` が共通Lifecycleの入口です。ゲーム固有のGameplay、Data、Assets、UIはFoundation側へ混ぜず、このRepositoryで管理します。
+
+`.game-foundation.json` は導入したFoundation Version / Commitと、Foundationが更新してよいManaged Pathを記録します。
+
+## 開発開始
+
+1. Godot 4.7.2 stableでProjectを開く
+2. `docs/ROADMAP.md` で最初のゲーム固有要件を決める
+3. Saveが必要ならGame固有の `capture_save_state` / `restore_save_state` Adapterを実装してFoundationRuntimeのSaveを有効にする
+4. Game Dev HubからRoadmapを確認しながら実装する
+
+Foundationの更新はGame Dev Hubの明示操作から行い、ゲーム固有Fileを自動上書きしない方針です。
