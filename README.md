@@ -1,4 +1,6 @@
-# test2
+# Foundation Runtime Test
+
+> Godot Game Foundation の実行構成を確認するための検証用リポジトリです。Game Dev Hub / Foundation 側からの参照有無を確認するまでは削除・アーカイブしません。
 
 Godot Game Foundationを基盤として作成されたGodotゲームProjectです。
 
